@@ -22,13 +22,13 @@ conda config --set auto_activate_base false
 
 Poetry is a Python package manager, but it does not install Python itself. You must have Python installed on your system before using Poetry.
 
-For this course, you will need Python 3.12 or 3.13 to ensure compatibility with the required packages. If you don't have either installed, please follw the instructions below to install it.
+For this course, you will need Python 3.12 to ensure compatibility with the required packages. If you don't have either installed, please follw the instructions below to install it.
 
 #### For Windows:
 
 1. **Download Python from the official website:**
    - Visit [python.org/downloads](https://www.python.org/downloads/)
-   - Download Python 3.12.x or 3.13.x (latest stable version recommended)
+   - Download Python 3.12.x (latest stable version recommended)
    - Choose the "Windows installer (64-bit)" for most modern computers
 
 2. **Run the installer:**
@@ -40,7 +40,7 @@ For this course, you will need Python 3.12 or 3.13 to ensure compatibility with 
    ```powershell
    python --version
    ```
-   This should display Python 3.12.x or 3.13.x
+   This should display Python 3.12.x 
 
 #### For macOS:
 
@@ -51,17 +51,16 @@ For this course, you will need Python 3.12 or 3.13 to ensure compatibility with 
 
 2. **Install Python using Homebrew:**
    ```bash
-   # Install Python 3.12 or 3.13
+   # Install Python 3.12
    brew install python@3.12
-   # OR
-   brew install python@3.13
+
    ```
 
 3. **Verify the installation:**
    ```bash
    python3 --version
    ```
-   This should display Python 3.12.x or 3.13.x
+   This should display Python 3.12.x
 
 4. **Important for macOS users - Check Python architecture:**
    
@@ -82,13 +81,11 @@ For this course, you will need Python 3.12 or 3.13 to ensure compatibility with 
    ```bash
    # Uninstall current Python
    brew uninstall --ignore-dependencies python@3.12
-   # OR
-   brew uninstall --ignore-dependencies python@3.13
+
 
    # Reinstall Python for Apple Silicon
    arch -arm64 brew install python@3.12
-   # OR
-   arch -arm64 brew install python@3.13
+
 
    # Verify the fix
    python3 -c "import platform; print(f'Architecture: {platform.machine()}')"
@@ -169,7 +166,7 @@ Instead, please follow the official installation method below to install Poetry 
 
 3. **Configure Poetry to use the correct Python version**
 
-   If you have multiple Python versions on your system, Poetry might have trouble selecting the correct one. To ensure your project uses Python 3.12 or 3.13, you need to explicitly specify which Python interpreter Poetry should use.
+   If you have multiple Python versions on your system, Poetry might have trouble selecting the correct one. To ensure your project uses Python 3.12, you need to explicitly specify which Python interpreter Poetry should use.
 
    First, locate your Python installation path, then configure Poetry to use it:
 
@@ -179,9 +176,8 @@ Instead, please follow the official installation method below to install Poetry 
 
    **Examples:**
 
-   - **Windows:** If you have Python 3.12 and 3.13 installed at:
+   - **Windows:** If you have Python 3.12 installed at:
      - `C:\Users\lsi8012\AppData\Local\Programs\Python\Python312\python.exe`
-     - `C:\Users\lsi8012\AppData\Local\Programs\Python\Python313\python.exe`
      
      To use Python 3.12, run:
      ```powershell
