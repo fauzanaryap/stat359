@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "stat359_su25"
+name = "stat362"
 version = "0.1.0"
 description = ""
 package-mode = false
@@ -7,31 +7,32 @@ authors = ["Your Name <you@example.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
-gensim = "^4.3.3"
+python = ">3.10,<3.14"
 matplotlib = "^3.10.3"
-scipy = "<1.14.0"
 scikit-learn = "^1.7.0"
 datasets = "^3.6.0"
 ipywidgets = "^8.1.7"
 nltk = "^3.9.1"
+torch = "^2.7.1"
 torchsummary = "^1.5.1"
 seaborn = "^0.13.2"
-sentence-transformers = "^4.1.0"
-accelerate = ">=0.26.0"
 ipykernel = "^6.29.5"
 transformers = "^4.52.4"
-tensorboard = "^2.19.0"
-langchain = "^0.3.26"
-langchain-ollama = "^0.3.3"
+
 umap-learn = "^0.5.7"
 plotly = "^6.2.0"
-numpy = "<2.3"
+sentence-transformers = "^5.1.0"
+pandas = "^2.3.2"
+pyarrow = "^22.0.0"
+tensorflow-metal = { version = "1.1.0", platform = "darwin" }
+pytest = "^8.4.2"
+tensorflow = "^2.20.0"
+keras = "^3.12.0"
+torchvision = "^0.24.0"
+torchaudio = "^2.9.0"
+tf-keras = "^2.20.1"
+gensim = "^4.4.0"
 
-[[tool.poetry.source]]
-name = "torch_cuda"
-url = "https://download.pytorch.org/whl/cu130"
-priority = "supplemental"
 
 [build-system]
 requires = ["poetry-core"]
